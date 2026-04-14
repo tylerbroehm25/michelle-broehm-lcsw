@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michelle Broehm, LCSW | Online Therapy in California</title>
+<meta name="description" content="Michelle Broehm, Licensed Clinical Social Worker offering online therapy in California. Specializing in anxiety, ADHD, and life transitions. Telehealth sessions available statewide.">
+<meta name="keywords" content="therapist Los Angeles, online therapy California, LCSW telehealth, anxiety therapy, ADHD therapy, Larchmont therapist, Michelle Broehm">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --sage: #7A9E7E;
+    --sage-light: #EEF4EE;
+    --sage-dark: #4A6B4E;
+    --warm: #C9A87C;
+    --warm-light: #FAF6F0;
+    --text: #2C2C2A;
+    --text-mid: #5F5E5A;
+    --text-light: #888780;
+    --border: rgba(44,44,42,0.12);
+    --white: #FFFFFF;
+    --radius: 12px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--warm-light);
+  }
+
+  h1, h2, h3, .serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  /* NAV */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(250,246,240,0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 0.5px solid var(--border);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--text-mid);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--sage-dark); }
+
+  .nav-cta {
+    background: var(--sage) !important;
+    color: var(--white) !important;
+    padding: 0.45rem 1.1rem;
+    border-radius: 99px;
+    font-size: 0.82rem !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    letter-spacing: 0.01em !important;
+    transition: background 0.2s !important;
+  }
+
+  .nav-cta:hover { background: var(--sage-dark) !important; }
+
+  /* HERO */
+  .hero {
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    gap: 4rem;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(2.8rem, 5vw, 4.2rem);
+    font-weight: 400;
+    line-height: 1.15;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-text h1 em {
+    color: var(--sage-dark);
+    font-style: italic;
+  }
+
+  .hero-text p {
+    font-size: 1.05rem;
+    color: var(--text-mid);
+    max-width: 420px;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+  }
+
+  .hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .badge {
+    font-size: 0.78rem;
+    font-weight: 500;
+    padding: 0.3rem 0.8rem;
+    border-radius: 99px;
+    background: var(--sage-light);
+    color: var(--sage-dark);
+    border: 0.5px solid rgba(74,107,78,0.2);
+    letter-spacing: 0.02em;
+  }
+
+  .badge.warm {
+    background: #FDF3E7;
+    color: #7A5C2A;
+    border-color: rgba(122,92,42,0.2);
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    background: var(--sage);
+    color: var(--white);
+    padding: 0.85rem 1.8rem;
+    border-radius: 99px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background 0.2s, transform 0.15s;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover {
+    background: var(--sage-dark);
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary {
+    display: inline-block;
+    color: var(--text-mid);
+    padding: 0.85rem 1.8rem;
+    border-radius: 99px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 400;
+    border: 0.5px solid var(--border);
+    transition: border-color 0.2s, color 0.2s;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--sage);
+    color: var(--sage-dark);
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-photo-frame {
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 3/4;
+    background: var(--sage-light);
+    border-radius: 200px 200px 120px 120px;
+    border: 0.5px solid rgba(74,107,78,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  .photo-placeholder {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .photo-placeholder p {
+    font-size: 0.85rem;
+    color: var(--sage-dark);
+    font-style: italic;
+  }
+
+  .initials-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: var(--sage);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--white);
+    margin: 0 auto 1rem;
+  }
+
+  /* STATS BAR */
+  .stats-bar {
+    background: var(--white);
+    border-top: 0.5px solid var(--border);
+    border-bottom: 0.5px solid var(--border);
+  }
+
+  .stats-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .stat-item {
+    padding: 1rem;
+  }
+
+  .stat-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--sage-dark);
+    display: block;
+    line-height: 1.1;
+  }
+
+  .stat-label {
+    font-size: 0.82rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+  }
+
+  /* ABOUT */
+  section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+  }
+
+  .section-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--sage);
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .about-text p {
+    color: var(--text-mid);
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    line-height: 1.85;
+  }
+
+  .about-text p:last-child { margin-bottom: 0; }
+
+  .about-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .modality-card {
+    background: var(--white);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+  }
+
+  .modality-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 0.4rem;
+  }
+
+  .modality-card p {
+    font-size: 0.88rem;
+    color: var(--text-light);
+    line-height: 1.6;
+  }
+
+  /* SPECIALTIES */
+  .specialties-section {
+    background: var(--sage-light);
+    padding: 5rem 0;
+    border-top: 0.5px solid rgba(74,107,78,0.12);
+    border-bottom: 0.5px solid rgba(74,107,78,0.12);
+  }
+
+  .specialties-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .specialties-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .specialty-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 1.75rem;
+    border: 0.5px solid rgba(74,107,78,0.15);
+  }
+
+  .specialty-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: var(--sage-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 20px;
+  }
+
+  .specialty-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+
+  .specialty-card p {
+    font-size: 0.88rem;
+    color: var(--text-light);
+    line-height: 1.65;
+  }
+
+  /* FEES */
+  .fees-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2.5rem;
+    align-items: start;
+  }
+
+  .fee-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    border: 0.5px solid var(--border);
+    overflow: hidden;
+  }
+
+  .fee-card-header {
+    background: var(--sage);
+    padding: 1.5rem;
+    color: var(--white);
+  }
+
+  .fee-card-header .fee-amount {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 1;
+    display: block;
+  }
+
+  .fee-card-header .fee-label {
+    font-size: 0.82rem;
+    opacity: 0.85;
+    margin-top: 0.25rem;
+    display: block;
+  }
+
+  .fee-card-body {
+    padding: 1.5rem;
+  }
+
+  .fee-card-body ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .fee-card-body li {
+    font-size: 0.9rem;
+    color: var(--text-mid);
+    padding-left: 1.2rem;
+    position: relative;
+  }
+
+  .fee-card-body li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--sage);
+  }
+
+  .fee-note {
+    background: #FDF6ED;
+    border: 0.5px solid rgba(122,92,42,0.15);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+  }
+
+  .fee-note h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 0.75rem;
+  }
+
+  .fee-note p {
+    font-size: 0.9rem;
+    color: var(--text-mid);
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+  }
+
+  .fee-note p:last-child { margin-bottom: 0; }
+
+  /* TELEHEALTH */
+  .telehealth-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .telehealth-text p {
+    color: var(--text-mid);
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    line-height: 1.85;
+  }
+
+  .telehealth-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .feature-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: var(--white);
+    border-radius: var(--radius);
+    border: 0.5px solid var(--border);
+    padding: 1rem 1.25rem;
+  }
+
+  .feature-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--sage);
+    flex-shrink: 0;
+    margin-top: 0.55rem;
+  }
+
+  .feature-row div h4 {
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 0.15rem;
+  }
+
+  .feature-row div p {
+    font-size: 0.83rem;
+    color: var(--text-light);
+    line-height: 1.5;
+  }
+
+  /* INTAKE FORM */
+  .form-section {
+    background: var(--white);
+    padding: 5rem 0;
+    border-top: 0.5px solid var(--border);
+  }
+
+  .form-inner {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .form-inner .section-title {
+    text-align: center;
+  }
+
+  .form-inner > p {
+    text-align: center;
+    color: var(--text-mid);
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .intake-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .form-group label {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    color: var(--text);
+    background: var(--warm-light);
+    border: 0.5px solid var(--border);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+    -webkit-appearance: none;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--sage);
+    box-shadow: 0 0 0 3px rgba(122,158,126,0.12);
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 110px;
+  }
+
+  .form-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .form-submit button {
+    width: 100%;
+    background: var(--sage);
+    color: var(--white);
+    border: none;
+    border-radius: 99px;
+    padding: 1rem 2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+  }
+
+  .form-submit button:hover {
+    background: var(--sage-dark);
+    transform: translateY(-1px);
+  }
+
+  .form-submit p {
+    font-size: 0.78rem;
+    color: var(--text-light);
+    text-align: center;
+  }
+
+  .form-success {
+    display: none;
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--sage-light);
+    border-radius: var(--radius);
+    border: 0.5px solid rgba(74,107,78,0.2);
+  }
+
+  .form-success h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--sage-dark);
+    margin-bottom: 0.75rem;
+  }
+
+  .form-success p {
+    color: var(--text-mid);
+    font-size: 0.95rem;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--text);
+    color: rgba(255,255,255,0.6);
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  footer .footer-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--white);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  footer p {
+    font-size: 0.82rem;
+    line-height: 1.7;
+    margin-bottom: 0.25rem;
+  }
+
+  footer a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+  }
+
+  footer a:hover { color: var(--white); }
+
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1.5rem 0 0;
+    padding-top: 1.5rem;
+    border-top: 0.5px solid rgba(255,255,255,0.1);
+  }
+
+  .footer-links a {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    nav { padding: 1rem; }
+    .nav-links { display: none; }
+    .hero {
+      grid-template-columns: 1fr;
+      padding: 2rem 1.25rem;
+      min-height: auto;
+      gap: 2rem;
+    }
+    .hero-image { order: -1; }
+    .hero-photo-frame { max-width: 260px; aspect-ratio: 1/1; border-radius: 50%; }
+    .stats-inner { grid-template-columns: 1fr; gap: 0; }
+    .stat-item { border-bottom: 0.5px solid var(--border); }
+    .about-grid, .fees-grid, .telehealth-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .specialties-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    section { padding: 3rem 1.25rem; }
+    .specialties-section { padding: 3rem 0; }
+    .specialties-inner { padding: 0 1.25rem; }
+    .form-inner { padding: 0 1.25rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-name">Michelle Broehm, LCSW</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#specialties">Specialties</a></li>
+    <li><a href="#fees">Fees</a></li>
+    <li><a href="#telehealth">Telehealth</a></li>
+    <li><a href="#contact" class="nav-cta">Free Consult</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-text">
+    <h1>A space to find <em>clarity,</em> purpose &amp; change</h1>
+    <p>You don't have to navigate anxiety, ADHD, or life's big transitions alone. I'm Michelle — a licensed therapist based in Los Angeles offering warm, practical support via telehealth across California.</p>
+    <div class="hero-badges">
+      <span class="badge">Licensed LCSW</span>
+      <span class="badge">10+ Years Experience</span>
+      <span class="badge warm">Telehealth Statewide CA</span>
+      <span class="badge warm">Free 15-Min Consult</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Request a Consultation</a>
+      <a href="#about" class="btn-secondary">Learn More</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <div class="hero-photo-frame">
+      <div class="photo-placeholder">
+        <div class="initials-circle">MB</div>
+        <p>Add your headshot here</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <span class="stat-number">10+</span>
+      <span class="stat-label">Years of Experience</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">CA</span>
+      <span class="stat-label">Licensed Statewide</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">100%</span>
+      <span class="stat-label">Telehealth — Online</span>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-text">
+      <span class="section-label">About Michelle</span>
+      <h2 class="section-title">Honest, warm support — with a bit of humor</h2>
+      <p>If you've been feeling stuck, repeating patterns you can't seem to break, or just emotionally drained — you're in the right place. I've spent over a decade helping adults and older adults move through anxiety, ADHD, life transitions, and more.</p>
+      <p>My approach is grounded in psychodynamic and social learning theory, using evidence-based tools like ACT, CBT, and motivational interviewing to help you understand your values, your behavior patterns, and how to take action that actually aligns with who you want to be.</p>
+      <p>I believe therapy should feel real, not clinical. If you don't mind a bit of honesty and the occasional laugh, I'd love to connect for a free 15-minute consultation.</p>
+      <br>
+      <a href="#contact" class="btn-primary">Book a Free Consult</a>
+    </div>
+    <div class="about-aside">
+      <div class="modality-card">
+        <h4>Acceptance &amp; Commitment Therapy (ACT)</h4>
+        <p>We'll explore how your thoughts and feelings shape your behavior, and work toward action that aligns with your deepest values.</p>
+      </div>
+      <div class="modality-card">
+        <h4>Cognitive Behavioral Therapy (CBT)</h4>
+        <p>Practical tools to recognize and reframe negative thought patterns into more productive, grounded perspectives.</p>
+      </div>
+      <div class="modality-card">
+        <h4>Psychodynamic &amp; Person-Centered</h4>
+        <p>A compassionate, collaborative space to explore the underlying patterns and experiences shaping your life today.</p>
+      </div>
+      <div class="modality-card">
+        <h4>Motivational Interviewing</h4>
+        <p>Helping you identify your own motivation and readiness for change — on your terms, at your pace.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIALTIES -->
+<div class="specialties-section" id="specialties">
+  <div class="specialties-inner">
+    <span class="section-label">Areas of Focus</span>
+    <h2 class="section-title">What I help with</h2>
+    <div class="specialties-grid">
+      <div class="specialty-card">
+        <div class="specialty-icon">&#x1F9E0;</div>
+        <h3>Anxiety</h3>
+        <p>Whether it's daily worry, social anxiety, or a persistent sense of dread — we'll work together to identify triggers, build coping strategies, and move toward calm.</p>
+      </div>
+      <div class="specialty-card">
+        <div class="specialty-icon">&#x26A1;</div>
+        <h3>ADHD</h3>
+        <p>For adults navigating ADHD in work and relationships — practical support to understand your patterns, harness your strengths, and build structure that works for you.</p>
+      </div>
+      <div class="specialty-card">
+        <div class="specialty-icon">&#x1F331;</div>
+        <h3>Life Transitions</h3>
+        <p>Career changes, relationship shifts, aging, loss — I help clients find footing and purpose during the moments that feel most uncertain.</p>
+      </div>
+      <div class="specialty-card">
+        <div class="specialty-icon">&#x1F4AC;</div>
+        <h3>Relationship Issues</h3>
+        <p>Patterns in relationships — romantic, family, or professional — that feel stuck or painful. We'll explore what's underneath and how to move forward.</p>
+      </div>
+      <div class="specialty-card">
+        <div class="specialty-icon">&#x2615;</div>
+        <h3>Depression &amp; Mood</h3>
+        <p>Low energy, hopelessness, emotional flatness — therapy can help you understand what's driving these feelings and reconnect with a sense of meaning.</p>
+      </div>
+      <div class="specialty-card">
+        <div class="specialty-icon">&#x1F9ED;</div>
+        <h3>Coping &amp; Stress</h3>
+        <p>Work stress, parenting pressure, caregiver burnout — building the tools and perspective to handle what life throws at you without running on empty.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TELEHEALTH -->
+<section id="telehealth">
+  <span class="section-label">How It Works</span>
+  <h2 class="section-title">Therapy that comes to you</h2>
+  <div class="telehealth-grid">
+    <div class="telehealth-text">
+      <p>All sessions are conducted via secure, HIPAA-compliant video or phone — so whether you're in Los Angeles, San Francisco, San Diego, or anywhere else in California, we can work together.</p>
+      <p>Telehealth removes the commute, the waiting room, and the scheduling friction. Many clients find it easier to open up from the comfort of their own space.</p>
+      <p>Sessions are typically 50 minutes and scheduled weekly or bi-weekly depending on your needs and goals.</p>
+    </div>
+    <div class="telehealth-features">
+      <div class="feature-row">
+        <div class="feature-dot"></div>
+        <div>
+          <h4>HIPAA-compliant video sessions</h4>
+          <p>Secure, private, and easy to use — no software to download.</p>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="feature-dot"></div>
+        <div>
+          <h4>Available anywhere in California</h4>
+          <p>Licensed to practice throughout the state — not just LA.</p>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="feature-dot"></div>
+        <div>
+          <h4>Weekday scheduling</h4>
+          <p>Morning and afternoon slots available Monday through Friday.</p>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="feature-dot"></div>
+        <div>
+          <h4>Free 15-minute consultation</h4>
+          <p>Let's talk before you commit — no pressure, no obligation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEES -->
+<section id="fees" style="padding-top: 0;">
+  <span class="section-label">Investment</span>
+  <h2 class="section-title">Fees &amp; payment</h2>
+  <div class="fees-grid">
+    <div class="fee-card">
+      <div class="fee-card-header">
+        <span class="fee-amount">$180</span>
+        <span class="fee-label">per 50-minute session</span>
+      </div>
+      <div class="fee-card-body">
+        <ul>
+          <li>Individual one-on-one therapy</li>
+          <li>Secure video or phone session</li>
+          <li>Visa &amp; Mastercard accepted</li>
+          <li>Sliding scale available — ask me</li>
+          <li>Superbill provided for out-of-network reimbursement</li>
+        </ul>
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      <div class="fee-note">
+        <h3>Not currently taking insurance</h3>
+        <p>I'm an out-of-pocket provider. If you have a PPO plan, you may be able to submit a superbill for partial reimbursement — typically 40–80% depending on your plan.</p>
+        <p>I'm happy to discuss what works for your budget. Sliding scale spots are available for clients who need them.</p>
+      </div>
+      <div class="fee-note" style="background: var(--sage-light); border-color: rgba(74,107,78,0.2);">
+        <h3>Free consultation</h3>
+        <p>Not sure if we're a good fit? Start with a free 15-minute call — no commitment required. Use the form below to get in touch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTAKE FORM -->
+<div class="form-section" id="contact">
+  <div class="form-inner">
+    <span class="section-label" style="display: block; text-align: center;">Get in Touch</span>
+    <h2 class="section-title">Request a free consultation</h2>
+    <p>Fill out the form below and I'll reach out within one business day to schedule your free 15-minute call.</p>
+
+    <form class="intake-form" id="intakeForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Jane" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="jane@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone" placeholder="(213) 555-0100">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="reason">What brings you to therapy?</label>
+        <select id="reason" name="reason" required>
+          <option value="" disabled selected>Select the primary concern</option>
+          <option value="anxiety">Anxiety</option>
+          <option value="adhd">ADHD</option>
+          <option value="depression">Depression or mood</option>
+          <option value="life-transition">Life transition</option>
+          <option value="relationships">Relationship issues</option>
+          <option value="stress">Stress &amp; coping</option>
+          <option value="other">Other / Not sure</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="availability">Best time to reach you</label>
+        <select id="availability" name="availability">
+          <option value="" disabled selected>Select preferred time</option>
+          <option value="morning">Weekday mornings (before 12pm)</option>
+          <option value="afternoon">Weekday afternoons (12–5pm)</option>
+          <option value="flexible">Flexible — weekdays</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Anything else you'd like me to know?</label>
+        <textarea id="message" name="message" placeholder="Share as much or as little as you'd like — there's no wrong answer here."></textarea>
+      </div>
+      <div class="form-submit">
+        <button type="submit">Send My Request</button>
+        <p>Your information is kept completely confidential.</p>
+      </div>
+    </form>
+
+    <div class="form-success" id="formSuccess">
+      <h3>Thank you for reaching out.</h3>
+      <p>I'll be in touch within one business day to schedule your free consultation. In the meantime, feel free to call or text at <a href="tel:+16263146683">(626) 314-6683</a>.</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-name">Michelle Broehm, LCSW</span>
+  <p>Licensed Clinical Social Worker &nbsp;|&nbsp; LCSW #92693</p>
+  <p>Los Angeles, CA &nbsp;|&nbsp; Telehealth available statewide in California</p>
+  <p><a href="tel:+16263146683">(626) 314-6683</a></p>
+  <div class="footer-links">
+    <a href="#about">About</a>
+    <a href="#specialties">Specialties</a>
+    <a href="#fees">Fees</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.psychologytoday.com/us/therapists/michelle-broehm-los-angeles-ca/717125" target="_blank" rel="noopener">Psychology Today Profile</a>
+  </div>
+</footer>
+
+<script>
+document.getElementById('intakeForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const data = {
+    firstName: document.getElementById('firstName').value,
+    lastName: document.getElementById('lastName').value,
+    email: document.getElementById('email').value,
+    phone: document.getElementById('phone').value,
+    reason: document.getElementById('reason').value,
+    availability: document.getElementById('availability').value,
+    message: document.getElementById('message').value,
+    submittedAt: new Date().toLocaleString()
+  };
+
+  // Using Formspree for email delivery — replace YOUR_FORM_ID below
+  fetch('https://formspree.io/f/YOUR_FORM_ID', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({
+      name: data.firstName + ' ' + data.lastName,
+      email: data.email,
+      phone: data.phone || 'Not provided',
+      reason: data.reason,
+      availability: data.availability,
+      message: data.message || 'None provided',
+      _subject: 'New therapy inquiry from ' + data.firstName + ' ' + data.lastName,
+      _replyto: data.email
+    })
+  })
+  .then(function(res) {
+    document.getElementById('intakeForm').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  })
+  .catch(function() {
+    document.getElementById('intakeForm').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  });
+});
+</script>
+
+</body>
+</html>
